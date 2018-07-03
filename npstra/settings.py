@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import credentials
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -77,11 +78,11 @@ WSGI_APPLICATION = 'npstra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'chillbout',
-        'USER': 'postgres',
-        'PASSWORD': 'Newpwd&11894',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': credentials.dbname,
+        'USER': credentials.dbuser,
+        'PASSWORD': credentials.dbpassword,
+        'HOST': credentials.dbhome,
+        'PORT': credentials.dbport,
     }
 }
 # Password validation
