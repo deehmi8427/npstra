@@ -11,67 +11,82 @@
 {% block content %}
     <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">NPSTRA</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">NPSTRA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link hidden" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hidden" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled hidden" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hidden" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success disabled">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">National Political Strategic Registry</h1>
+          <p>In an age where information is vital having a centralized information body is essential in giving a competitive edge against the competition.
+            Be able to combine data, form relations, formulate strategies and track objective on the fly. Register your success on the political battlefield intelligently.</p>
+          <p><a class="btn btn-primary btn-lg disabled" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
       <div class="container">
-        <h1>National Political Strategic Registry</h1>
-        <p>In an age where information is vital having a centralized information body is essential in giving a competitive edge against the competition.
-            Be able to combine data, form relations, formulate strategies and track objective on the fly. Register your success on the political battlefield intelligently. </p>
-        <p><a class="btn btn-primary btn-lg disabled" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Strategic Decisions</h2>
-          <p>Formulate strategic decision using centralized and updated information from all spheres of the political landscape. Be able to list and record those strategies with the ability to update and form a larger global plan. </p>
-          <p><a class="btn btn-default disabled" href="#" role="button">View details &raquo;</a></p>
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Strategic Decisions</h2>
+            <p>Formulate strategic decision using centralized and updated information from all spheres of the political landscape. Be able to list and record those strategies with the ability to update and form a larger global plan.</p>
+            <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Comprehensive Intelligence</h2>
+            <p>Gather and organize information like never before from events, places and even persons.Be ahead on the information game like never before.Combine a future-proof solution with the ease of use and access. </p>
+            <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Build relations and Track Objectives </h2>
+            <p>From the intelligence gathered, be able to pick up patterns and relationship between events, agendas, and person.Therefore allowing a bird's eye view of the political landscape without having any complicated procedures and executing tasks efficiently that achieve objectives.</p>
+            <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2>Comprehensive Intelligence</h2>
-          <p>Gather and organize information like never before from events, places and even persons.Be ahead on the information game like never before.Combine a future-proof solution with the ease of use and access</p>
-          <p><a class="btn btn-default disabled" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Build relations and Track Objectives </h2>
-          <p>From the intelligence gathered, be able to pick up patterns and relationship between events, agendas, and person.Therefore allowing a bird's eye view of the political landscape without having any complicated procedures and executing tasks efficiently that achieve objectives.</p>
-          <p><a class="btn btn-default disabled" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
 
-      <hr>
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+
 
       <footer>
         <p>&copy; {% now "Y" %} Silvatech, .</p>
       </footer>
-    </div> <!-- /container -->
 
     </body>
 {% endblock %}
